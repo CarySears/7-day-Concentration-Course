@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Day Concentration Reset - Reclaim Your Focus for $9</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #87CEEB 0%, #FF6B6B 100%);
+            padding: 80px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 30%, rgba(255,255,255,0.2) 0%, transparent 70%);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            line-height: 1.1;
+        }
+        
+        .hero .tagline {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .urgency-badge {
+            display: inline-block;
+            background: #FF6B6B;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 8px 20px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.9; }
+            50% { opacity: 1; }
+        }
+        
+        .price-hero {
+            display: inline-block;
+            background: rgba(255,255,255,0.95);
+            color: #87CEEB;
+            font-size: 2.5rem;
+            font-weight: 800;
+            padding: 15px 40px;
+            border-radius: 50px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            margin-bottom: 40px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .cta-primary {
+            background: #10B981;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 700;
+            padding: 18px 45px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(16,185,129,0.3);
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(16,185,129,0.4);
+            background: #059669;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-alt {
+            background: white;
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        
+        .section h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #FF6B6B;
+        }
+        
+        .section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #4a4a4a;
+        }
+        
+        .problem-section {
+            background: linear-gradient(135deg, #fee2e2 0%, #fef3c7 100%);
+        }
+        
+        .promise-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .promise-list li {
+            font-size: 1.1rem;
+            padding: 12px 0;
+            position: relative;
+            padding-left: 40px;
+            color: #4a4a4a;
+        }
+        
+        .promise-list li::before {
+            content: '✨';
+            position: absolute;
+            left: 0;
+            font-size: 1.3rem;
+        }
+        
+        .course-outline {
+            margin: 50px 0;
+        }
+        
+        .day-item {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 5px solid #87CEEB;
+            transition: all 0.3s ease;
+        }
+        
+        .day-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .day-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #FF6B6B;
+            margin-bottom: 10px;
+        }
+        
+        .day-description {
+            color: #4a4a4a;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .formats-section {
+            background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+            text-align: center;
+        }
+        
+        .format-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .format-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .format-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        
+        .format-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .format-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #FF6B6B;
+            margin-bottom: 15px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #FF6B6B;
+            margin-bottom: 10px;
+        }
+        
+        .benefits-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .benefits-list li {
+            font-size: 1.1rem;
+            padding: 15px 0;
+            position: relative;
+            padding-left: 50px;
+            color: #4a4a4a;
+        }
+        
+        .benefits-list li::before {
+            content: '🎯';
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+        }
+        
+        .testimonials {
+            background: linear-gradient(135deg, #fef3c7 0%, #fee2e2 100%);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        
+        .testimonial::before {
+            content: '"';
+            font-size: 4rem;
+            color: #87CEEB;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #FF6B6B;
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, #FF6B6B 0%, #87CEEB 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .final-cta h2 {
+            color: white;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+        
+        .final-cta p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .cta-secondary {
+            background: #10B981;
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 700;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        
+        .cta-secondary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            background: #059669;
+        }
+        
+        .final-message {
+            margin-top: 40px;
+            font-size: 1.2rem;
+            font-style: italic;
+            opacity: 0.9;
+        }
+        
+        .guarantee-section {
+            background: #f0f9ff;
+            padding: 40px 0;
+            text-align: center;
+            border: 2px solid #10B981;
+            border-radius: 15px;
+            margin: 40px 0;
+            color: #1a1a1a;
+        }
+        
+        .guarantee-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .guarantee-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #10B981;
+            margin-bottom: 10px;
+        }
+        
+        .value-comparison {
+            background: linear-gradient(135deg, #fef3c7 0%, #fee2e2 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .bio-section {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        
+        .bio-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .bio-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #87CEEB 0%, #FF6B6B 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .bio-text h3 {
+            color: #FF6B6B;
+            margin-bottom: 10px;
+        }
+        
+        .bio-credentials {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #87CEEB;
+        }
+        
+        .faq-section {
+            background: white;
+        }
+        
+        .faq-item {
+            background: #f8fafc;
+            padding: 25px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #87CEEB;
+        }
+        
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #FF6B6B;
+            margin-bottom: 10px;
+        }
+        
+        .faq-answer {
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .trust-badge {
+            background: rgba(255,255,255,0.2);
+            padding: 15px 25px;
+            border-radius: 10px;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .price-hero {
+                font-size: 2rem;
+                padding: 12px 30px;
+            }
+            
+            .section h2 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .bio-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .bio-image {
+                width: 150px;
+                height: 150px;
+                font-size: 3rem;
+            }
+            
+            .trust-badges {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>7-Day Concentration Reset</h1>
+                <p class="tagline"><strong>Reclaim your attention. Rebalance your energy. Rewire your mind.</strong></p>
+                <div class="urgency-badge">🔥 Limited Time - Transform Your Focus This Week</div>
+                <div class="price-hero">Price: $9</div>
+                <h2 class="hero-subtitle">Your Reset Button for Focus & Calm</h2>
+                <a href="#buy-now" class="cta-primary">Start Your Reset Today</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <div class="section">
+        <div class="container">
+            <p style="font-size: 1.2rem; text-align: center; max-width: 700px; margin: 0 auto;">In a world of constant notifications, endless scrolling, and mental overload, your attention has never been more at risk. The <strong>7-Day Concentration Reset</strong> is your reset button. Over the next seven days, you'll reclaim control of your focus, calm your mind, and build powerful new habits that support clarity, confidence, and peace.</p>
+            
+            <div class="value-comparison">
+                <h3 style="color: #FF6B6B; margin-bottom: 15px;">🎯 Incredible Value</h3>
+                <p><strong>Compare:</strong> A single therapy session costs $150+ • A mindfulness app subscription runs $70/year • One-on-one coaching starts at $200/session</p>
+                <p style="font-size: 1.1rem; font-weight: 600; color: #10B981; margin-top: 10px;">Get a complete transformation system for just $9 ✨</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Problem Section -->
+    <div class="section problem-section">
+        <div class="container">
+            <h2>The Problem: A Distracted World</h2>
+            <p>Your brain isn't broken—it's just overworked and overstimulated. Modern life constantly competes for your attention: phones, news alerts, social media, to‑do lists, and more. All those pings pull your mind in a dozen directions, leaving you scattered, drained, and overwhelmed. But attention is a skill—and skills can be trained.</p>
+        </div>
+    </div>
+
+    <!-- Promise Section -->
+    <div class="section section-alt">
+        <div class="container">
+            <h2>The Promise: Focus Is a Superpower</h2>
+            <p>When you reclaim your ability to focus, everything starts to shift:</p>
+            <ul class="promise-list">
+                <li>Finish what you start</li>
+                <li>Feel less overwhelmed</li>
+                <li>Enjoy life more because you're truly present</li>
+                <li>Move from reacting to responding with intention</li>
+            </ul>
+            <p style="text-align: center; font-size: 1.3rem; font-weight: 600; color: #FF6B6B;">Let's (re)build your focus together.</p>
+        </div>
+    </div>
+
+    <!-- Course Outline Section -->
+    <div class="section">
+        <div class="container">
+            <h2>What You'll Learn</h2>
+            <p style="text-align: center; margin-bottom: 40px;">Each day explores one theme that affects your ability to concentrate and gives you tools to shift it immediately:</p>
+            
+            <div class="course-outline">
+                <div class="day-item">
+                    <div class="day-title">Day 0: Why Concentration Matters</div>
+                    <div class="day-description">How your attention shapes your life</div>
+                </div>
+                
+                <div class="day-item">
+                    <div class="day-title">Day 1: Energy + Focus</div>
+                    <div class="day-description">How scattered attention drains you, and how to reclaim your energy</div>
+                </div>
+                
+                <div class="day-item">
+                    <div class="day-title">Day 2: Social Media Detox</div>
+                    <div class="day-description">Why digital overload fragments your mind—and how to take it back</div>
+                </div>
+                
+                <div class="day-item">
+                    <div class="day-title">Day 3: News Fatigue</div>
+                    <div class="day-description">How doomscrolling hijacks emotions—and what to do instead</div>
+                </div>
+                
+                <div class="day-item">
+                    <div class="day-title">Day 4: Training the Brain</div>
+                    <div class="day-description">Use neuroplasticity to rewire your focus pathways</div>
+                </div>
+                
+                <div class="day-item">
+                    <div class="day-title">Day 5: Mindfulness Mastery</div>
+                    <div class="day-description">How present-moment awareness sharpens attention</div>
+                </div>
+                
+                <div class="day-item">
+                    <div class="day-title">Day 6: Strengthening with Meditation</div>
+                    <div class="day-description">Build emotional stability and clarity</div>
+                </div>
+                
+                <div class="day-item">
+                    <div class="day-title">Day 7: Lasting Habits</div>
+                    <div class="day-description">Turn all these practices into a focus routine you can stick with</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Learning Formats Section -->
+    <div class="section formats-section">
+        <div class="container">
+            <h2>Two Ways to Learn</h2>
+            <p>Choose the format that fits your style:</p>
+            
+            <div class="format-cards">
+                <div class="format-card">
+                    <div class="format-icon">⚡</div>
+                    <div class="format-title">The Core Lesson</div>
+                    <p>A short, clear version for busy minds. Straight to the point and easy to apply.</p>
+                </div>
+                
+                <div class="format-card">
+                    <div class="format-icon">🤓</div>
+                    <div class="format-title">The Deep Dive</div>
+                    <p>For the science nerds who want to explore the psychology, neuroscience, and ancient wisdom behind focus.</p>
+                </div>
+            </div>
+            
+            <p>Whether you've got 5 minutes a day or want to geek out on the science, you're in the right place.</p>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="section section-alt">
+        <div class="container">
+            <h2>Course Features</h2>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-title">Instant Full Access</div>
+                    <p>No drip feed—start every module today.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🧘</div>
+                    <div class="feature-title">Guided Meditations</div>
+                    <p>Daily resets to ground your mind and calm your energy.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">💬</div>
+                    <div class="feature-title">Interactive Text Coaching</div>
+                    <p>Reply to any text prompt for one‑on‑one support.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">🌱</div>
+                    <div class="feature-title">Life Happens, No Stress</div>
+                    <p>Miss a day? Just pick up where you left off—no guilt, no pressure.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="section">
+        <div class="container">
+            <h2>What You'll Gain</h2>
+            <p>By the end of this course, you'll walk away with:</p>
+            
+            <ul class="benefits-list">
+                <li>A clearer, calmer mind</li>
+                <li>Practical tools to reduce stress and reactivity</li>
+                <li>Daily practices that sharpen your focus</li>
+                <li>Greater emotional awareness and balance</li>
+                <li>A sustainable focus habit that supports your goals</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Instructor Bio Section -->
+    <div class="section bio-section">
+        <div class="container">
+            <h2>Meet Your Guide</h2>
+            
+            <div class="bio-content">
+                <div class="bio-image">🧘‍♀️</div>
+                
+                <div class="bio-text">
+                    <h3>Jai Lynn McPheron, LMT, E-RYT</h3>
+                    <p style="font-size: 1.1rem; font-weight: 600; color: #87CEEB; margin-bottom: 15px;">Mindful Life Coach | Musician | Meditation Guide</p>
+                    
+                    <p>Jai Lynn McPheron is a Mindful Life and spiritual coach who helps people reconnect with their inner calm, clarity, and vitality. Her approach blends timeless wisdom with emerging insights from modern science.</p>
+                    
+                    <p>What makes Jai Lynn's teaching so powerful is that it's rooted in her own experience. She doesn't present herself as fully healed or transcendent, but as someone who is well along her own path of growth and transformation. The practices she shares aren't just theories; they are tools she has personally relied on to navigate physical, emotional, and spiritual healing.</p>
+                    
+                    <div class="bio-credentials">
+                        <strong>Credentials & Training:</strong>
+                        <ul style="margin-top: 10px; list-style: none; padding-left: 0;">
+                            <li>✨ 1,500+ hours of advanced training</li>
+                            <li>✨ Licensed Massage Therapist (LMT)</li>
+                            <li>✨ Experienced Registered Yoga Teacher (E-RYT)</li>
+                            <li>✨ Advanced Chi Kung certification</li>
+                            <li>✨ Co-host of Mindflow Radio podcast (9+ years)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="section testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-text">Before this course, my mind jumped between tasks every few minutes. Now I can work for hours without losing focus.</div>
+                    <div class="testimonial-author">— Alex, Project Manager</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">The Social Media Detox lesson was a game-changer. I feel more present with my family and less pulled by my phone.</div>
+                    <div class="testimonial-author">— Priya, Graduate Student</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">Jai's guided meditations helped me calm my anxiety instantly and move into flow.</div>
+                    <div class="testimonial-author">— Mike, Entrepreneur</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="section faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is this course suitable for beginners?</div>
+                <div class="faq-answer">Absolutely! The course is designed for anyone feeling scattered or overwhelmed, regardless of meditation experience. Each lesson includes both simple "Core Lessons" for busy minds and "Deep Dives" for those wanting more depth.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How much time do I need each day?</div>
+                <div class="faq-answer">You can get value in as little as 5-10 minutes per day with the Core Lessons. If you want to dive deeper, plan for 15-30 minutes. The beauty is you control the pace—there's no drip feed or deadline pressure.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">What if I miss a day or fall behind?</div>
+                <div class="faq-answer">No stress! Life happens, and this course is designed with that in mind. You have lifetime access, so you can start, stop, and restart whenever works for you. No guilt, no pressure—just pick up where you left off.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How does the interactive text coaching work?</div>
+                <div class="faq-answer">Throughout the course, you'll receive text prompts and questions. Simply reply with your thoughts, challenges, or questions, and you'll get personalized guidance and support. It's like having a mindfulness coach in your pocket.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is there really a money-back guarantee?</div>
+                <div class="faq-answer">Yes! We offer a full 30-day money-back guarantee. If you're not completely satisfied with the course for any reason, just email us within 30 days for a full refund. No questions asked.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final CTA Section -->
+    <div class="final-cta" id="buy-now">
+        <div class="container">
+            <h2>Start Your 7-Day Reset Today</h2>
+            <p>For just <strong>$9</strong>, get immediate, lifetime access to the <strong>7-Day Concentration Reset</strong>. No subscriptions, no drip feed—start your transformation right now.</p>
+            
+            <div class="guarantee-section">
+                <div class="guarantee-icon">🛡️</div>
+                <div class="guarantee-title">30-Day Money-Back Guarantee</div>
+                <p>Try the entire course risk-free. If you're not completely satisfied within 30 days, we'll refund every penny. No questions asked.</p>
+            </div>
+            
+            <a href="#" class="cta-secondary">Buy Now for $9</a>
+            
+            <div class="trust-badges">
+                <div class="trust-badge">🔒 Secure Checkout</div>
+                <div class="trust-badge">📱 Instant Access</div>
+                <div class="trust-badge">♾️ Lifetime Access</div>
+                <div class="trust-badge">💬 Personal Support</div>
+            </div>
+            
+            <p class="final-message"><em>You are not lazy. You are not broken. You are simply distracted—and that can change.</em></p>
+        </div>
+    </div>
+</body>
+</html>
